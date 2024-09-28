@@ -1,0 +1,171 @@
+body {
+    background-color: hsl(257, 40%, 49%);
+    font-family: 'Open Sans';
+    margin: 0;
+}
+
+/* Images Container */
+.background-image-mobile, .background-image-desktop {
+    background-size: cover;
+    width: 100%;
+}
+
+.logo {
+    margin-left: 3rem;
+    margin-top: 1rem;
+    position: absolute;
+    width: 28%;
+}
+
+.images-container {
+    height: auto;
+    position: relative;
+    width: 100%;
+}
+
+.illustration-mockups  {
+    height: auto;
+    left: 50px;
+    position: absolute;
+    top: 8rem;
+    width: 80%;
+}
+
+/* Image-mobile will be hidden in screens 1400px and wider */
+@media screen and (min-width: 1400px) { 
+    .background-image-mobile {
+      display: none;
+    }
+}
+
+/* Image-desktop will be hidden in screens 200px to 1399px wide */
+@media screen and (min-width: 200px) and (max-width: 1399px){ 
+    .background-image-desktop {
+      display: none;
+    }
+}
+
+/* Typography */
+.heading, .paragraph{
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+}
+
+.heading {
+    font-family: 'Poppins';
+    font-size: 40px;
+    margin: 2rem;
+}
+
+.paragraph {
+    font-size: 25px;
+    margin: 2rem;
+}
+
+/* Button */
+.register-button {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 100px;
+    box-shadow: 2px 2px 5px hsl(258, 40%, 40%);
+    color: hsl(257, 40%, 49%);
+    cursor: pointer;
+    display: block;
+    font-size: 15px;
+    margin: 2rem auto;
+    padding: 0.9rem;
+    text-align: center;
+    text-decoration: none;
+    width: 44%;
+}
+
+.register-button:hover {
+    background-color: hsl(0, 0%, 90%);
+}
+
+/* Social Icons */
+.social-icons {
+    cursor: pointer;
+    margin: 6rem;
+    text-align: center;
+}
+
+.fab {
+    border-radius: 50%;
+    border: 1.2px solid hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 100%);
+    font-size: 23px;
+    margin: 0.5rem;
+    padding: 0.8rem;
+    width: 1.2rem;
+}
+
+.fab:hover {
+    background-color: hsl(257, 40%, 59%);
+}
+
+/* Screens 1440px and wider */
+@media screen and (min-width: 1440px){
+
+   body {
+    overflow: hidden;
+   }
+
+    .logo {
+        width: 15%;
+    }
+
+    .desktop-container {
+        align-content: center;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+    }
+
+    .illustration-mockups {
+        width: 111%;
+    }
+
+    .background-image-desktop {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        width: 200%;
+    }
+
+    /* Typography */
+    .heading {
+        margin-left: 10rem;
+        margin-top: 9rem;
+        max-width: 50%;
+        text-align: left;
+    }
+
+    .paragraph {
+        margin-left: 10rem;
+        max-width: 70%;
+        text-align: left;
+    }
+
+     /* Button */
+
+    .register-button {
+        border-radius: 80px;
+        cursor: pointer; 
+        font-size: 20px;
+        margin-left: 10rem;
+        max-width: 20%;
+        position: relative;
+    }
+
+    /* Social icons */
+
+    .social-icons {
+        margin-top: -5rem;
+        text-align: right;
+    }
+
+    .fab {
+        padding: 1rem;
+    }
+}
